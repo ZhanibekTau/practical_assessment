@@ -22,3 +22,12 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+/sandbox/nginx/logs/**
+!sandbox/nginx/logs/.gitkeep
+
+sandbox/db/data/**
+!sandbox/db/data/.gitkeep
+
+/.ssh/**
+!/.ssh/.gitkeep
