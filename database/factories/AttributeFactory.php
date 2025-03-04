@@ -24,6 +24,7 @@ class AttributeFactory extends Factory
             ['name' => 'start_date', 'type' => 'date'],
             ['name' => 'end_date', 'type' => 'date'],
             ['name' => 'budget', 'type' => 'number'],
+            ['name' => 'priority', 'type' => 'select'],
         ];
 
         $attribute = $this->faker->randomElement($attributes);

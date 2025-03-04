@@ -26,6 +26,7 @@ class AttributeValueFactory extends Factory
         $value = match ($attribute->type) {
             'date' => $this->faker->date(),
             'number' => $this->faker->randomNumber(),
+            'select' => $this->faker->randomElement(['High', 'Medium', 'Low']),
             default => $this->faker->word(),
         };
 

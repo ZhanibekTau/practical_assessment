@@ -15,9 +15,8 @@ class Project extends Model
 
     public function attributes()
     {
-        return $this->belongsToMany(AttributeValue::class );
+        return $this->morphMany(AttributeValue::class, 'entity');
     }
-
     public function users()
     {
         return $this->belongsToMany(User::class);

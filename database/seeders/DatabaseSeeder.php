@@ -28,10 +28,13 @@ class DatabaseSeeder extends Seeder
         }
 
         $attributes = [
-            ['name' => 'Department', 'type' => 'string'],
-            ['name' => 'Start Date', 'type' => 'date'],
-            ['name' => 'End Date', 'type' => 'date'],
+            ['name' => 'department', 'type' => 'text'],
+            ['name' => 'start_date', 'type' => 'date'],
+            ['name' => 'end_date', 'type' => 'date'],
+            ['name' => 'budget', 'type' => 'number'],
+            ['name' => 'priority', 'type' => 'select'],
         ];
+
 
         foreach ($attributes as $attribute) {
             Attribute::create($attribute);

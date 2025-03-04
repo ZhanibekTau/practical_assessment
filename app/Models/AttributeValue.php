@@ -16,8 +16,8 @@ class AttributeValue extends Model
         return $this->belongsTo(Attribute::class);
     }
 
-    public function project()
+    public function entity()
     {
-        return $this->belongsTo(Project::class);
+        return $this->morphTo();
     }
 }
